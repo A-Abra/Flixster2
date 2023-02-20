@@ -32,7 +32,7 @@ GIF created with [ScreenToGif](https://www.screentogif.com/)
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Had issues with MainActivity being read as well as imports not working correctly at times at compilation.
 
 ## License
 
