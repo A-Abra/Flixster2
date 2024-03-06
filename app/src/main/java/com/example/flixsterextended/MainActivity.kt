@@ -11,8 +11,8 @@ import okhttp3.Headers
 import org.json.JSONException
 
 private const val TAG = "MainActivity"
-private const val TOP_RATED_MOVIES = "https://api.themoviedb.org/3/movie/top_rated?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed"
-private const val UPCOMING_MOVIES = "https://api.themoviedb.org/3/movie/upcoming?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed"
+private const val TOP_RATED_MOVIES = "https://api.themoviedb.org/3/movie/top_rated?api_key=${BuildConfig.TOP_RATED}"
+private const val UPCOMING_MOVIES = "https://api.themoviedb.org/3/movie/upcoming?api_key=${BuildConfig.UPCOMING}"
 class MainActivity : AppCompatActivity() {
     private val movies = mutableListOf<Movie>()
     private val upComingMovies = mutableListOf<UpComingMovie>()

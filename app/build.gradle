@@ -15,6 +15,12 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        Properties properties = new Properties()
+        properties.load(project.rootProject.file("local.properties").newDataInputStream())
+
+        buildConfigField "String", "TOP_RATED", "\"${properties.getProperty("TOP_RATED")}\""
+        buildConfigField "String", "UPCOMING", "\"${properties.getProperty("UPCOMING")}\""
     }
 
     buildTypes {

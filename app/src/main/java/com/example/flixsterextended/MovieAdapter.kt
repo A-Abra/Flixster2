@@ -101,7 +101,7 @@ class UpcomingAdapter(private val mContext: Context, private val upcomingMovies:
             tvOverviewUp.text = upComingMovie.upMovieOverview
             tvReleaseDateUp.text = upComingMovie.upReleaseDate
             Glide.with(mContext).load(upComingMovie.posterImageUrlUpcoming).placeholder(R.drawable.placeholder).centerCrop().transforms(
-                RoundedCorners(120)).error(R.drawable.imagenotfound).listener(object : RequestListener<Drawable?> {
+                RoundedCorners(120)).error(R.drawable.placeholder).listener(object : RequestListener<Drawable?> {
                 override fun onLoadFailed(
                     e: GlideException?,
                     model: Any?,
