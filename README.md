@@ -1,10 +1,6 @@
-# Android Project 4 - *Flixster++*
-
-Submitted by: **Anosh Abraham**
+# *Flixster++*
 
 **Flixster++** is a movie browsing app that allows users to browse upcoming/top rated movies.
-
-Time spent: **8** hours spent in total
 
 ## Required Features
 
